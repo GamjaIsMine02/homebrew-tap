@@ -8,6 +8,8 @@ brew install --cask GamjaIsMine02/tap/miniple
 
 Apple Silicon용 개발 빌드이며 Apple 공증이 없습니다. macOS가 실행을 차단할 수 있습니다. Homebrew 설치가 Gatekeeper 검사를 우회하지는 않습니다.
 
+2026-10-07 공개 tap을 통한 다운로드·설치를 확인했습니다. 설치 버전은 0.1.0-dev.1입니다. 설치된 앱의 ad-hoc 서명 무결성 검사는 통과했지만 macOS 실행 검사는 `rejected`를 반환했습니다. 격리 속성과 보안 설정은 변경하지 않았습니다.
+
 기본 설치 위치는 `/Applications/MINIPLE.app`입니다. 같은 이름의 기존 앱을 덮어쓰지 마세요. 기존 앱을 유지하려면 비어 있는 다른 앱 폴더를 사용하세요.
 
 ```sh

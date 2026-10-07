@@ -1,6 +1,6 @@
 # MINIPLE Homebrew tap
 
-기존 Chrome YouTube Music 앱/PWA를 AppleScript로 조작하는 경량 MINIPLE v1의 개발용 Cask입니다. `0.4.1-dev.1`은 이전 독립형 앱을 대체합니다. 확장 설치나 MINIPLE 내부의 별도 Google 로그인은 필요하지 않습니다.
+기존 Chrome YouTube Music 앱/PWA를 AppleScript로 조작하는 경량 MINIPLE v1의 개발용 Cask입니다. 최신 `0.4.2-dev.1`에는 세 단계 연결 안내·메뉴 정리·버튼 지연 개선이 포함됩니다. 확장 설치나 MINIPLE 내부의 별도 Google 로그인은 필요하지 않습니다.
 
 ```sh
 brew install --cask GamjaIsMine02/tap/miniple
@@ -27,3 +27,5 @@ brew upgrade --cask GamjaIsMine02/tap/miniple
 ```
 
 다운로드·연결 방법·서명 제한은 [MINIPLE 배포 안내](https://github.com/GamjaIsMine02/miniple-releases)를 확인하세요. 설치 스크립트에서 Chrome 설정·macOS 권한·격리 속성을 변경하지 않습니다.
+
+이 저장소는 앱 파일을 보관하는 곳이 아닌 Cask 설치 정의를 보관하는 tap입니다. 앱 ZIP은 GitHub Release에 있습니다. [Homebrew 배포 과정](https://github.com/GamjaIsMine02/miniple-releases/blob/main/DISTRIBUTION.md)에서 개발자 배포와 사용자 설치 단계를 확인하세요.

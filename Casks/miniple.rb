@@ -1,6 +1,6 @@
 cask "miniple" do
-  version "0.4.1-dev.1"
-  sha256 "f023ddc5b18f04924882d4111bd5d998b96e40ebe5a21d11c2d583987068e9b8"
+  version "0.4.2-dev.1"
+  sha256 "402f71cd4a3692bc9b760df97e565d852eaa7d1c9b64caad7bb819464e10c155"
 
   url "https://github.com/GamjaIsMine02/miniple-releases/releases/download/v#{version}/MINIPLE-#{version}-arm64.zip"
   name "MINIPLE"

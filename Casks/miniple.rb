@@ -1,10 +1,10 @@
 cask "miniple" do
-  version "0.1.0-dev.1"
-  sha256 "a34f8c8667f90a8820b32eb7efdceea3364558ad3b27083b4218fcfc62bd28e0"
+  version "0.4.1-dev.1"
+  sha256 "f023ddc5b18f04924882d4111bd5d998b96e40ebe5a21d11c2d583987068e9b8"
 
   url "https://github.com/GamjaIsMine02/miniple-releases/releases/download/v#{version}/MINIPLE-#{version}-arm64.zip"
   name "MINIPLE"
-  desc "Mini player for YouTube Music"
+  desc "Lightweight mini player controlling existing Chrome YouTube Music"
   homepage "https://github.com/GamjaIsMine02/miniple-releases"
 
   livecheck do
@@ -17,9 +17,14 @@ cask "miniple" do
   app "MINIPLE.app"
 
   caveats <<~EOS
-    Development build: ad-hoc signed, not Apple-notarized.
-    macOS may block first launch. Homebrew installation does not bypass Gatekeeper.
-    Requires Google sign-in inside MINIPLE; no Chrome extension is needed.
-    An existing MINIPLE.app must be preserved or moved before using the default app directory.
+    MINIPLE v1 controls an existing Chrome YouTube Music PWA or tab via AppleScript.
+    No Chrome extension, Chromium runtime, or separate Google sign-in is required.
+    Open MINIPLE after installation; connection instructions appear until the first successful connection.
+    Approve macOS Automation for MINIPLE -> Chrome, then enable Chrome's
+    View -> Developer -> Allow JavaScript from Apple Events manually.
+    These permissions apply to Chrome, not exclusively to YouTube Music.
+    Development build: ad-hoc signed, not Apple-notarized. macOS may block launch.
+    Homebrew does not bypass Gatekeeper or change browser/security settings.
+    Unmanaged MINIPLE.app installations must be preserved before using that app directory.
   EOS
 end
